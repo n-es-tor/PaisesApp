@@ -22,8 +22,7 @@ export class PorCapitalComponent  {
 
     this.paisService.buscarCapital( this.termino )
       .subscribe( capital=> {
-        console.log(capital);
-        this.capital = capital;
+       this.capital = capital;
 
     }, ( err ) => {
       this.hayError = true;
@@ -31,9 +30,5 @@ export class PorCapitalComponent  {
     } )
   }
   
-  sugerencias( termino: string ){
-    this.hayError = false;
-    //TODO: crear sugerencias
-  }
-
+  
 }
